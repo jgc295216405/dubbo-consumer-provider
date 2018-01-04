@@ -5,8 +5,8 @@ zk,provider,consumer
 一、zk的安装方式
 1.解压zookeeper-3.3.6.tar.gz
   tar xf zookeeper-3.3.6.tar.gz
-2.去conf目录下cp 
-	zoo_sample.cfg zoo.cfg
+2.去conf目录下,创建zoo.cfg，并修改dataDir=/Users/jgc/software/zookeeper-3.3.6（dataDir为zk的主目录)
+	cp zoo_sample.cfg zoo.cfg
 3.启动,默认启动端口2181监听（sudo lsof -i :2181）
 	zkServer.sh start
 二、直连模式
